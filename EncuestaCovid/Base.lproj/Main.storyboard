@@ -60,12 +60,18 @@
                                                 <state key="normal" title="Alumno">
                                                     <color key="titleColor" red="0.22273314359999999" green="0.41098030619999998" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="alumnoButtonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XE2-s5-wEG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3N-ri-Pnl">
                                                 <rect key="frame" x="256.5" y="152" width="68" height="30"/>
                                                 <state key="normal" title="Empleado">
                                                     <color key="titleColor" red="0.22273314359999999" green="0.41098030619999998" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="empleadoButtonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJR-Ru-nHG"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y9y-Gg-q4r">
                                                 <rect key="frame" x="31" y="276" width="298" height="34"/>
@@ -90,6 +96,9 @@
                                                 <state key="normal" title="Profesor">
                                                     <color key="titleColor" red="0.22273314359999999" green="0.41098030619999998" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="profesorButtonA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="anE-h5-uGl"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky-g427d881f2_1920" translatesAutoresizingMaskIntoConstraints="NO" id="kKN-ls-YGg">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
@@ -131,7 +140,7 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S3t-DJ-wt9">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S3t-DJ-wt9">
                                                 <rect key="frame" x="282" y="457" width="73" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="1Rr-P6-eVe"/>
@@ -141,21 +150,21 @@
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-wI-e4Z">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="e1m-wI-e4Z">
                                                 <rect key="frame" x="282" y="543" width="73" height="32"/>
                                                 <segments>
                                                     <segment title="Si"/>
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mld-Lv-Knd">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mld-Lv-Knd">
                                                 <rect key="frame" x="282" y="575" width="73" height="32"/>
                                                 <segments>
                                                     <segment title="Si"/>
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rD2-OK-eCQ">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rD2-OK-eCQ">
                                                 <rect key="frame" x="282" y="614" width="73" height="29"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="XZj-mV-IOc"/>
@@ -165,35 +174,35 @@
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s0h-rW-F3E">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s0h-rW-F3E">
                                                 <rect key="frame" x="282" y="649" width="73" height="32"/>
                                                 <segments>
                                                     <segment title="Si"/>
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UsG-Xq-kuV">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UsG-Xq-kuV">
                                                 <rect key="frame" x="282" y="681" width="73" height="32"/>
                                                 <segments>
                                                     <segment title="Si"/>
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gDo-bW-tYL">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gDo-bW-tYL">
                                                 <rect key="frame" x="282" y="715" width="73" height="32"/>
                                                 <segments>
                                                     <segment title="Si"/>
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wco-7S-ikU">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wco-7S-ikU">
                                                 <rect key="frame" x="282" y="755" width="73" height="32"/>
                                                 <segments>
                                                     <segment title="Si"/>
                                                     <segment title="No"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y1M-Nf-tGq">
+                                            <segmentedControl opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Y1M-Nf-tGq">
                                                 <rect key="frame" x="282" y="812" width="73" height="32"/>
                                                 <segments>
                                                     <segment title="Si"/>
@@ -245,7 +254,17 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-kc-uvz">
                                                 <rect key="frame" x="166.5" y="910" width="42" height="30"/>
                                                 <state key="normal" title="Enviar"/>
+                                                <connections>
+                                                    <action selector="btnEnviar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e7f-96-kit"/>
+                                                </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvU-MU-DJH">
+                                                <rect key="frame" x="151" y="867" width="196" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -383,10 +402,24 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="QuestionEightS" destination="Wco-7S-ikU" id="JAf-xh-Ngz"/>
+                        <outlet property="QuestionFiveS" destination="s0h-rW-F3E" id="d3y-4y-ADd"/>
+                        <outlet property="QuestionFourS" destination="rD2-OK-eCQ" id="hDW-jz-aRy"/>
+                        <outlet property="QuestionNineS" destination="Y1M-Nf-tGq" id="llr-cR-K7g"/>
+                        <outlet property="QuestionOneS" destination="S3t-DJ-wt9" id="qfc-1A-CnV"/>
+                        <outlet property="QuestionSevenS" destination="gDo-bW-tYL" id="nvf-27-UIh"/>
+                        <outlet property="QuestionSixS" destination="UsG-Xq-kuV" id="UTi-8a-9hR"/>
+                        <outlet property="QuestionThreeS" destination="mld-Lv-Knd" id="Xaw-Ci-fEX"/>
+                        <outlet property="QuestionTwoS" destination="e1m-wI-e4Z" id="DTa-GP-wZ5"/>
                         <outlet property="alumnoButton" destination="blK-qE-HpB" id="4hK-gC-oOu"/>
                         <outlet property="empleadoButton" destination="N3N-ri-Pnl" id="Him-IS-qBi"/>
                         <outlet property="matriculalbl" destination="1mR-jb-gSh" id="Xbt-sm-IDf"/>
                         <outlet property="profesorButton" destination="Lr9-GR-7xf" id="I4t-ky-TnQ"/>
+                        <outlet property="professorButtonA" destination="Lr9-GR-7xf" id="Uvz-nF-HnJ"/>
+                        <outlet property="userEmailtxt" destination="BPo-ei-PsR" id="4Hr-XM-whY"/>
+                        <outlet property="userIdentificationtxt" destination="ik3-O0-dmR" id="azy-el-nEa"/>
+                        <outlet property="userNametxt" destination="y9y-Gg-q4r" id="mM1-Mn-YVh"/>
+                        <outlet property="warninglbl" destination="tvU-MU-DJH" id="OjH-rA-Obk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
